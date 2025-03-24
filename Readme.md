@@ -22,3 +22,24 @@
   
 - Ваш проект используется пустую папку images, но гит не поддерживает отслеживание пустых директорий. Что делать?
 > Создать пустой файл внутри папки .gitkeep
+
+# Mission 3
+## Part0&1
+
+[Link to video](https://drive.google.com/file/d/1mRZqqs4yaCemId1KiuaC-j3sow4oEd4i/view?usp=drive_link)
+
+## Part3
+
+~~~~sql
+SELECT 
+    AVG(message_count) AS avg_messages_per_user
+FROM (
+    SELECT 
+        from1 AS user_id,
+        COUNT(*) AS message_count
+    FROM 
+        messages
+    GROUP BY 
+        from1
+) AS user_stats;
+~~~~
