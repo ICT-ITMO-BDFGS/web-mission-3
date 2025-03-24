@@ -34,7 +34,8 @@
 ~~~~sql
 SELECT 
     username
-FROM sers
+FROM 
+    users
 ~~~~
 2.
 ~~~~sql
