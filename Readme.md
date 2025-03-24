@@ -26,10 +26,42 @@
 # Mission 3
 ## Part0&1
 
-[Link to video](https://drive.google.com/file/d/1mRZqqs4yaCemId1KiuaC-j3sow4oEd4i/view?usp=drive_link)
+[Link to video](https://drive.google.com/file/d/1wrG5qvFg4FLokW3TtUIpy7cojnObrKIX/view?usp=sharing)
 
 ## Part3
 
+1.
+~~~~sql
+SELECT 
+    username
+FROM sers
+~~~~
+2.
+~~~~sql
+SELECT 
+    from1,
+    COUNT(*) AS message_count
+FROM 
+    messages
+GROUP BY 
+    from1
+ORDER BY 
+    message_count DESC;
+~~~~
+3.
+~~~~sql
+SELECT 
+    to1 AS user_id,
+    COUNT(*) AS received_message_count
+FROM 
+    messages
+GROUP BY 
+    to1
+ORDER BY 
+    received_message_count DESC
+LIMIT 1;
+~~~~
+4.
 ~~~~sql
 SELECT 
     AVG(message_count) AS avg_messages_per_user
